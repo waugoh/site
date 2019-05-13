@@ -1,0 +1,647 @@
+
+/* Basic */
+html,body {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+body h1{
+  font-family: 'Jockey One', sans-serif;
+  text-transform: uppercase;
+  color: #FC0077;
+}
+
+body h2{
+  font-family: 'Jura', sans-serif;
+  text-transform: uppercase;
+  color: #FC8E00;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 190%;
+  font-weight: 700;
+}
+
+body h3, body p{
+  font-family: 'Jura', sans-serif;
+}
+
+button.btn, a.btn{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+  font-size: 120%;
+}
+
+/*Navbar*/
+section.container-fluid#accueil{
+  padding: 0;
+}
+
+#navbarNav{
+  background-color: transparent;
+}
+
+/*BTN*/
+.btn-primary.cta {
+  color: #fff !important;
+  background-color: #FC0077 !important;
+  border-color: #FC0077 !important;
+}
+
+.btn-primary.cta:hover {
+  color: #FC0077 !important;
+  background-color: transparent !important;
+  border-color: #FC0077 !important;
+}
+
+.btn-primary.cta:focus, .btn-primary.cta.focus {
+  box-shadow: 0 0 0 0.2rem rgba(252, 0, 119, 0.5) !important;
+}
+
+.btn-primary.cta.disabled, .btn-primary.cta:disabled {
+  color: #fff !important;
+  background-color: #FC0077 !important;
+  border-color: #FC0077 !important;
+}
+
+.btn-primary.cta:not(:disabled):not(.disabled):active, .btn-primary.cta:not(:disabled):not(.disabled).active,
+.show > .btn-primary.cta.dropdown-toggle {
+  color: #fff !important;
+  background-color: #FC0077 !important;
+  border-color: #FC0077 !important;
+}
+
+.btn-primary.cta:not(:disabled):not(.disabled):active:focus, .btn-primary.cta:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.cta.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(252, 0, 119, 0.5) !important;
+}
+
+
+/*ACCUEIL*/
+#accueil{
+  background-image: url("../img/bckgd/bcgd_test.png");
+  min-height: 100vh;
+}
+
+.navbar-brand p{
+  display: inline-block;
+  padding-top: 3%;
+  font-family: 'Jockey One', 'Jura', sans-serif;
+  font-size: 150%;
+}
+
+#menu{
+  background: transparent;
+  box-shadow: none;
+}
+
+#titres{
+  margin-top: 9%;
+}
+
+#titres h1{
+  text-align: center;
+  font-size: 300%;
+  color: #1A1A1A;
+}
+
+#titres button{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#btnWeb{
+  margin-top: 10%;
+  display: block;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#navbarNav ul.nav li{
+  font-family: 'Jockey One', 'Jura', sans-serif;
+  font-size: 120%;
+}
+
+#navbarNav .nav .nav-item a{
+  color: #FC0077;
+}
+
+#navbarNav .nav .nav-item a:hover{
+  color: #FC8E00;
+}
+
+#navbarNav .nav .nav-item a:active{
+  color: #FFF;
+}
+
+#navbarNav .nav .nav-item:active{
+background-color: #FC8E00;
+}
+
+/*PRESTATIONS*/
+
+#prestations{
+  height: 100vh;
+}
+
+.presta .img-fluid{
+  width: 70%;
+  display: block;
+  margin:auto;
+}
+
+.presta h3{
+  text-align: center;
+  font-size: 150%;
+  margin-top: 10%;
+  color: #FC0077;
+  font-weight:600;
+}
+
+.presta {
+  text-align: justify;
+  margin-top: 5%;
+  color: #1A1A1A;
+  font-weight:400;
+}
+
+/*TRAVAUX*/
+#travauxMob{
+  display: none;
+}
+
+#travaux .btn-outline-black{
+  color: #FC0077 !important;
+  font-family: 'Jura', sans-serif;
+  font-weight: 600;
+  border: 2px solid transparent !important;
+  border-radius: 30px;
+}
+
+#travaux .btn-outline-black:hover, 
+#travaux .btn-outline-black:focus, 
+#travaux .btn-outline-black:active, 
+#travaux .btn-outline-black:active:focus, 
+#travaux .btn-outline-black.active {
+  color: #fff !important; 
+  border-color: #FC0077 !important;
+  background-color: #FC0077 !important;
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; 
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; 
+}
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); 
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+/*COMPETENCES*/
+#web, #graph, #troisd{
+  margin-bottom: 5%;
+}
+
+#competences h3{
+  text-align: center;
+}
+
+#competences .progress .progress-bar{
+  height: 1rem !important;
+}
+
+#competences #web .progress-bar{
+  background-color: #347B98 !important;
+}
+
+#competences #graph .progress-bar{
+  background-color: #1A1A1A !important;
+}
+
+#competences #troisd .progress-bar{
+  background-color: #66B032 !important;
+}
+
+#btnComp a{
+  display: block;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/*CONTACT*/
+#contact{
+  height: 80vh;
+}
+
+#contact label{
+  color: #1A1A1A;
+  font-weight: 600;
+}
+
+#contact p{
+  color: #1A1A1A;
+  font-size: 120%;
+}
+
+#contact input, #contact textarea{
+    color: #1A1A1A;
+  }
+
+form{
+  font-family: 'Jura', sans-serif;
+  color: #fff;
+}
+
+
+.md-form input[type=text],
+.md-form input[type=password],
+.md-form input[type=email],
+.md-form input[type=url],
+.md-form input[type=time],
+.md-form input[type=date],
+.md-form input[type=datetime-local],
+.md-form input[type=tel],
+.md-form input[type=number],
+.md-form input[type=search-md],
+.md-form input[type=search],
+.md-form textarea.md-textarea {
+  border-bottom: 1px solid #FC0077 !important;
+}
+
+.md-form input[type=text]:focus:not([readonly]),
+.md-form input[type=password]:focus:not([readonly]),
+.md-form input[type=email]:focus:not([readonly]),
+.md-form input[type=url]:focus:not([readonly]),
+.md-form input[type=time]:focus:not([readonly]),
+.md-form input[type=date]:focus:not([readonly]),
+.md-form input[type=datetime-local]:focus:not([readonly]),
+.md-form input[type=tel]:focus:not([readonly]),
+.md-form input[type=number]:focus:not([readonly]),
+.md-form input[type=search-md]:focus:not([readonly]),
+.md-form input[type=search]:focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  -webkit-box-shadow: 0 1px 0 0 #FC0077 !important;
+  box-shadow: 0 1px 0 0 #FC0077 !important;
+  border-bottom: 1px solid #FC0077 !important; 
+}
+
+.md-form input[type=text]:focus:not([readonly]) + label,
+.md-form input[type=password]:focus:not([readonly]) + label,
+.md-form input[type=email]:focus:not([readonly]) + label,
+.md-form input[type=url]:focus:not([readonly]) + label,
+.md-form input[type=time]:focus:not([readonly]) + label,
+.md-form input[type=date]:focus:not([readonly]) + label,
+.md-form input[type=datetime-local]:focus:not([readonly]) + label,
+.md-form input[type=tel]:focus:not([readonly]) + label,
+.md-form input[type=number]:focus:not([readonly]) + label,
+.md-form input[type=search-md]:focus:not([readonly]) + label,
+.md-form input[type=search]:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: #FC0077 !important; 
+}
+
+.fa, .fas{
+  color: #FC0077;
+}
+
+#contact a.btn.btn-primary.cta{
+  margin: auto;
+}
+
+/*Footer */
+#bas2page{
+  background-color: #1A1A1A;
+  margin-top: 7%;
+  font-family: 'Jura', sans-serif;
+  padding-bottom: 1%;
+}
+
+#copyR{
+  text-align: right;
+}
+
+/*Media queries*/
+
+/*MOBILE*/
+@media only screen and (max-width: 576px){
+
+  /*BTN*/
+
+  button.btn, a.btn{
+    font-size: 100%;
+  }
+
+  .btn-primary.cta {
+    padding: 2% 7%;
+  }
+
+  #accueil, #travauxMob, #competences{
+    margin-bottom: 5%;
+  }
+
+  body h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9%;
+    margin-top: 9%;
+    font-size: 170%;
+    font-weight: 700;
+  }
+
+  /*section1*/
+  #accueil{
+    background-image: url("../img/bckgd/bcgd_test.png");
+  }
+
+  #menu{
+    box-shadow: 0 2.5px 8px grey;
+    background: white;
+    /*position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;*/
+  }
+
+  .navbar-brand p{
+    display: none !important;
+  }
+
+  #navbarNav ul.nav li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+  }
+
+  #navbarNav .nav .nav-item a{
+    color: #FC0077;
+  }
+
+  #navbarNav .nav .nav-item a:active{
+    color: #FFF;
+  }
+
+  #navbarNav .nav .nav-item:active{
+  background-color: #FC8E00;
+  }
+
+  #titres{
+    margin-top: 30%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+
+  #titres h1{
+    text-align: center;
+    font-size: 220%;
+  }
+
+  #btnWeb{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 110%;
+  }
+
+  /*section2*/
+
+  #prestations{
+    height: auto;
+  }
+
+
+  /*section3: TRAVAUX  
+  #travaux{
+    display: none;
+  }*/
+
+
+  #travaux{
+    padding-bottom: 5%;
+  }
+
+  #imgCarousel .carousel-caption {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: blue;
+    text-align: center;
+  }
+
+  #imgCarousel .carousel-caption h3{
+    color: #FC0077;
+    font-weight: 700;
+    font-size: 140%;
+  }
+
+  #imgCarousel .carousel-caption p{
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 105%;
+  }
+
+  #imgCarousel .carousel-indicators .active {
+    background-color: #FC0077;
+  }
+
+  #imgCarousel .carousel-indicators li {
+    background-color: rgba(252, 0, 119, 0.2);
+  }
+
+  #imgCarousel .carousel-control-prev, #imgCarousel .carousel-control-next{
+    top: -35%;
+  }
+    
+
+  /*section 4: COMPETENCES */
+  #competences{
+    padding-bottom: 10%;
+  }
+
+  #web, #graph, #troisd{
+    margin-bottom: 10%;
+  }  
+
+  #competences #web .progress-bar{
+    background-color: #347B98 !important;
+  }
+
+  #competences #graph .progress-bar{
+    background-color: #1A1A1A !important;
+  }
+
+  #competences #troisd .progress-bar{
+    background-color: #66B032 !important;
+  }
+
+  #competences h3{
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.2;
+  }
+
+  #competences p{
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 1%;
+  }
+
+  #competences .progress{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+  } 
+
+  #competences .progress{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+  }   
+
+  #btnComp button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+  }
+
+  /*section 5: CONTACT */
+  #contact{
+    height: auto;
+    background-image: url("../img/bckgd/Oman.png");
+    background-size: 100% 100%;
+    padding-bottom: 10%;
+  }
+
+  #contact button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+  }
+
+  #contact input, #contact textarea{
+    color: #fff;
+  }
+
+  #contact p, #contact label, #contact h2{
+    color: #fff;
+  }  
+
+  .md-form input[type=text],
+  .md-form input[type=password],
+  .md-form input[type=email],
+  .md-form input[type=url],
+  .md-form input[type=time],
+  .md-form input[type=date],
+  .md-form input[type=datetime-local],
+  .md-form input[type=tel],
+  .md-form input[type=number],
+  .md-form input[type=search-md],
+  .md-form input[type=search],
+  .md-form textarea.md-textarea {
+    border-bottom: 1px solid #fff !important;
+  }
+
+  .md-form input[type=text]:focus:not([readonly]),
+  .md-form input[type=password]:focus:not([readonly]),
+  .md-form input[type=email]:focus:not([readonly]),
+  .md-form input[type=url]:focus:not([readonly]),
+  .md-form input[type=time]:focus:not([readonly]),
+  .md-form input[type=date]:focus:not([readonly]),
+  .md-form input[type=datetime-local]:focus:not([readonly]),
+  .md-form input[type=tel]:focus:not([readonly]),
+  .md-form input[type=number]:focus:not([readonly]),
+  .md-form input[type=search-md]:focus:not([readonly]),
+  .md-form input[type=search]:focus:not([readonly]),
+  .md-form textarea.md-textarea:focus:not([readonly]) {
+    -webkit-box-shadow: 0 1px 0 0 #fff !important;
+    box-shadow: 0 1px 0 0 #fff !important;
+    border-bottom: 1px solid #fff !important; 
+  }
+
+  .md-form input[type=text]:focus:not([readonly]) + label,
+  .md-form input[type=password]:focus:not([readonly]) + label,
+  .md-form input[type=email]:focus:not([readonly]) + label,
+  .md-form input[type=url]:focus:not([readonly]) + label,
+  .md-form input[type=time]:focus:not([readonly]) + label,
+  .md-form input[type=date]:focus:not([readonly]) + label,
+  .md-form input[type=datetime-local]:focus:not([readonly]) + label,
+  .md-form input[type=tel]:focus:not([readonly]) + label,
+  .md-form input[type=number]:focus:not([readonly]) + label,
+  .md-form input[type=search-md]:focus:not([readonly]) + label,
+  .md-form input[type=search]:focus:not([readonly]) + label,
+  .md-form textarea.md-textarea:focus:not([readonly]) + label {
+    color: #fff !important; 
+  }
+
+  .fa, .fas{
+    color: #fff;
+  }
+
+  /*Footer */
+
+  #bas2page{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 0;
+  }
+
+  #socialNet div{
+    padding-right: 20%;
+    padding-left: 26%;
+  }
+
+  #copyR{
+    margin-top: 3%;
+    text-align: left;
+  }
+}
